@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tasarımı</title>
+</head>
+<body>
+    <h1>HTML KODLAMAYI ÖĞRENME</h1><br>
+
+    <!-- 1. HTML EDITORS -->
+    <h1>SIRADAKİ KONU: HTML EDİTÖRLERİ (EDITORS)</h1>
+    <p>HTML kodlarını yazmak ve çalıştırmak için metin editörleri kullanılır.</p>
+    <h3>BİLİNMESİ GEREKEN TERİMLER:</h3>
+    <ul>
+        <li><b>VS Code (Visual Studio Code):</b> En yaygın kullanılan ücretsiz ve gelişmiş kod editörüdür.</li>
+        <li><b>Notepad / Metin Belgesi:</b> Bilgisayarlarda varsayılan bulunan en temel metin düzenleyicidir.</li>
+        <li><b>.html Uzantısı:</b> Yazılan kodların web sayfası olarak taranması için dosya adının sonuna eklenen uzantıdır (Örn: index.html).</li>
+        <li><b>Live Server:</b> VS Code içinde kodları kaydettiğimiz an tarayıcıda canlı olarak güncelleyen bir eklentidir.</li>
+    </ul>
+
+    <!-- 2. HTML BASIC -->
+    <h2>html kodlamaya başlarken</h2>
+    <ul>
+        <li>html kodlamaya başlarken <code>!doctype html diye başlarız</code> . Anlamı tarayıcıya bu belgenin bir html5 dosyası olduğunu söylemektir</li>
+        <li><b>html :</b>Bir HTML sayfasındaki en dıştaki (ana) etikettir.
+             Tüm diğer HTML elemanları (başlıklar, gövde, paragraflar vb.) bu etiketlerin içinde yer alır. Sayfanın başlangıcını ve bitişini belirler.</li>
+        <li><b>head :</b> Web sitesinde görünmeyen ancak teknik bilgileri barındıran bölümdür.Sayfa başlığı,
+            teknik ayarlar gibi arka planda çalışan bilgiler bu bölümde yer alır.</li>
+        <li><b>body :</b> Web sitesinde görünen tüm içeriklerin bulunduğu bölümdür.
+             Metinler, resimler, videolar, bağlantılar ve diğer görsel öğeler bu bölümde yer alır.</li>
+    </ul>
+
+    <!-- 3. HEADINGS, PARAGRAPHS & COMMENTS -->
+    <h1>h1 ile Merhaba HTML</h1>
+    <h2>h2 ile Merhaba HTML</h2>
+    <h3>h3 ile Merhaba HTML </h3>
+    <h4>h4 ile Merhaba HTML</h4>
+    <h5>h5 ile Merhaba HTML</h5>
+    <h6>h6 ile Merhaba HTML</h6>
+    <ul>    
+        <li><b>h</b> başlık etiketidir. h1 den başlayıp h6 ya kadar devam eder.Sayı arttıkça yazı boyutu küçülür.</li>
+        <br>
+        <li><b>br</b> etiketi ile alt satira gecilir</li>
+        <li><b>p</b> etiketi ile paragraf belirtilir</li>
+        <li> &lt;!-- bu işaretle yorum satırı açılır --&gt; bu işaretlede kapanır sadece kod ekranında görülür</li>
+    </ul>
+
+    <!-- 4. HTML STYLES -->
+    <h1>SIRADAKİ KONU: HTML STİLLERİ (STYLES)</h1>
+    <p>Elementlere doğrudan renk, boyut, yazı tipi ve arka plan tasarımı vermek için <b>style</b> parametresi kullanılır.</p>
+    <h3>BİLİNMESİ GEREKEN TERİMLER:</h3>
+    <ul>
+        <li><b>style:</b> HTML etiketinin içine yazılan ve tasarım özelliklerini belirleyen parametredir.</li>
+        <li><b>color:</b> Metin rengini belirler (Örn: style="color:red;").</li>
+        <li><b>background-color:</b> Arka plan rengini belirler (Örn: style="background-color:black;").</li>
+        <li><b>font-size:</b> Yazı boyutunu piksel cinsinden belirler (Örn: style="font-size:20px;").</li>
+        <li><b>font-family:</b> Yazı tipini / font ailesini belirler (Örn: style="font-family:Arial;").</li>
+        <li><b>text-align:</b> Metnin sağa, sola veya ortaya hizalanmasını sağlar (Örn: style="text-align:center;").</li>
+    </ul>
+    <h3>ÖRNEK:</h3>
+    <p style="color:red; font-size:18px;">Bu metin kırmızı renkli ve 18px boyutundadır.</p>
+    <p style="background-color:yellow; text-align:center;">Bu metin sarı arka plana sahiptir ve ortalanmıştır.</p>
+
+    <!-- 5. HTML FORMATTING -->
+    <h1>SIRADAKİ KONU: METİN BİÇİMLENDİRME:</h1>
+    <h2>Göreceğimiz parametreler :</h2>
+    <ul>
+        <li><b>b :</b> kalın harf</li>
+        <li><b>i :</b> italik harf</li>
+        <li><b>big :</b> büyük harf</li>
+        <li><b>small :</b> küçük harf</li>
+        <li><b>sub :</b> alt sembol</li>
+        <li><b>sup :</b> üst sembol</li>
+        <li><b>ins :</b> altı çizili</li>
+        <li><b>del :</b> üstü çizili</li>
+        <li><b>mark :</b> fosforlu</li>
+    </ul>
+    <h3>ÖRNEK:</h3>
+    <ul> 
+        <li><b>kalın harf (b)</b><br><br></li>
+        <li><i>italik harf (i)</i><br></li>
+        <li><p>Bu <big>büyük harf (big)</big> yazısı</p><br></li>
+        <li><p>Bu <small>küçük harf (small)</small>yazısı</p><br></li>
+        <li><p>Bu <sub>alt sembol (sub)</sub> yazısı</p><br></li>
+        <li><p>Bu <sup>üst sembol (sup)</sup> yazısı</p><br></li>
+        <li><ins>altı çizili (ins)</ins><br></li>
+        <li><del>üstü çizili (del)</del><br></li>
+        <li><mark>fosforlu (mark)</mark></li>
+    </ul>
+
+    <!-- 6. HTML QUOTATIONS -->
+    <h1>SIRADAKİ KONU: ALINTILAR VE KISALTMALAR (QUOTATIONS)</h1>
+    <p>Başka kaynaklardan yapılan alıntıları ve kısaltmaları düzenlemek için kullanılan etiketlerdir.</p>
+    <h3>BİLİNMESİ GEREKEN TERİMLER:</h3>
+    <ul>
+        <li><b>blockquote:</b> Başka bir kaynaktan alınan uzun paragraf alıntılarını girintili blok olarak gösterir.</li>
+        <li><b>q:</b> Metin içindeki kısa alıntıları otomatik tırnak işareti (" ") içine alır.</li>
+        <li><b>abbr:</b> Kısaltmaları belirtmek için kullanılır. <b>"title"</b> parametresi ile imleç üzerine gelindiğinde açık hali görünür.</li>
+        <li><b>address:</b> Yazarın veya sitenin iletişim bilgilerini (e-posta, adres vb.) italik biçimde belirtir.</li>
+        <li><b>cite:</b> Bir eserin, kitabın veya makalenin adını belirtmek için kullanılır.</li>
+    </ul>
+    <h3>ÖRNEK:</h3>
+    <p>W3C'nin tanımı:</p>
+    <blockquote cite="https://www.w3.org">
+        Web standartlarını belirleyen uluslararası bir kuruluştur.
+    </blockquote>
+    <p>Atatürk der ki: <q>Dinlenmemek üzere yürümeye karar verenler, asla yorulmazlar.</q></p>
+    <p><abbr title="HyperText Markup Language">HTML</abbr>'in açılımını görmek istiyorsan imleci kelimenin üzerine tut.</p>
+    <address>
+        Yazar: Eren<br>
+        İletişim: eren@gmail.com
+    </address>
+
+    <!-- 7. HTML COLORS (YENİ EKLENDİ) -->
+    <h1>SIRADAKİ KONU: RENKLER (COLORS)</h1>
+    <p>HTML'de renkler sadece İngilizce isimlerle (red, blue vb.) değil, farklı kodlama sistemleriyle de belirlenir.</p>
+    <h3>BİLİNMESİ GEREKEN TERİMLER:</h3>
+    <ul>
+        <li><b>Color Names:</b> Standart İngilizce renk isimleridir (Örn: Tomato, DodgerBlue, MediumSeaGreen).</li>
+        <li><b>RGB (Red, Green, Blue):</b> Kırmızı, yeşil ve mavi ışık değerlerinin 0 ile 255 arasında karıştırılmasıyla oluşur (Örn: <code>rgb(255, 0, 0)</code> kırmızıdır).</li>
+        <li><b>HEX (Hexadecimal):</b> Başında <code>#</code> işareti olan 6 haneli onaltılık renk kodudur (Örn: <code>#ff0000</code> kırmızıdır).</li>
+        <li><b>HSL (Hue, Saturation, Lightness):</b> Renk tonu, doygunluk ve parlaklık değerlerine göre renk verir (Örn: <code>hsl(0, 100%, 50%)</code>).</li>
+    </ul>
+    <h3>ÖRNEK:</h3>
+    <p style="background-color:rgb(255, 99, 71); color:white;">Bu arka plan RGB kodu ile boyanmıştır: rgb(255, 99, 71)</p>
+    <p style="background-color:#3cb371; color:white;">Bu arka plan HEX kodu ile boyanmıştır: #3cb371</p>
+    <p style="background-color:hsl(248, 53%, 58%); color:white;">Bu arka plan HSL kodu ile boyanmıştır: hsl(248, 53%, 58%)</p>
+
+    <!-- 8. HTML CSS (YENİ EKLENDİ) -->
+    <h1>SIRADAKİ KONU: HTML İLE CSS KULLANIMI (CSS)</h1>
+    <p>Web sayfalarını tasarlamak ve düzenlemek için kullanılan CSS, HTML'e 3 farklı şekilde eklenir.</p>
+    <h3>BİLİNMESİ GEREKEN TERİMLER:</h3>
+    <ul>
+        <li><b>Inline CSS (Satır İçi):</b> Doğrudan HTML etiketinin içine <code>style="..."</code> parametresi yazarak kullanılır.</li>
+        <li><b>Internal CSS (Sayfa İçi):</b> HTML dosyasının <code>&lt;head&gt;</code> bölümünde <code>&lt;style&gt; ... &lt;/style&gt;</code> etiketleri açılarak yazılır.</li>
+        <li><b>External CSS (Harici):</b> Ayrı bir <code>.css</code> dosyası oluşturulur ve <code>&lt;head&gt;</code> içine <code>&lt;link rel="stylesheet" href="stil.css"&gt;</code> kodu eklenerek bağlanır.</li>
+    </ul>
+
+    <!-- 9. HTML LINKS (HYPERLINK) -->
+    <h1>Siradaki konu HYPERLINK</h1>
+    <p>
+        <b>a</b> etiketi ile hyperlink olusturulur örnegin
+        <a href="https://www.youtube.com">youtube</a>
+        burada önce <code>href</code> yazilir sonra link verilir ve linkin ne oldugu yazilir mesela
+        <code>href = "https://www.youtube.com"</code> bu sekilde yazilir ve linkin ne oldugu yazilir mesela youtube yazilir   
+    </p>
+    <p>eger link baska sekmede acilmak istenirse hreften sonra yazdigimiz linkin yanina <code>target="_blank" yazilir</code></p>
+    <h3>örnegin</h3>
+    <a href="https://www.youtube.com" target="_blank">youtube</a>
+    <p>eger imleci linkin bagli oldugu kelimeye getirip o linkli kelimenin üzerine gelindiginde 
+        o linkin nereye gittigini gorunmesini istersek kullanacagimiz komut title="linkin nereye gittigi" seklinde yazilir.                   
+    </p>
+    <p>ornegin 
+        <a href="https://www.youtube.com" title="Youtube">youtube</a> 
+    </p>
+    <p>burada yazdigimiz komut <code>href="https://www.youtube.com" title="Youtube"</code> dur.</p>
+
+    <!-- 10. HTML IMAGES -->
+    <h1>Siradaki konu Resim ekleme / İmage</h1>
+    <h3> BİLİNMESİ GEREKEN TERİMLER:</h3>
+    <ul>
+        <li><b>img :</b> resim eklemek için kullanılır</li>
+        <li><b>src :</b> resmin kaynağını belirtir</li>
+        <li><b>alt :</b> resmin alternatif metnini belirtir</li>
+        <li><b>width :</b> resmin genişliğini belirtir</li>
+        <li><b>height :</b> resmin yüksekliğini belirtir</li>
+        <li><b>title :</b> imleci görselin üzerine getirildiğinde görünecek metni belirtir</li>
+    </ul>
+    <p>resimin bir linke dönüşmesini istiyorsak <b>a</b> etiketini kullanırız ve <b>a</b> etiketinin açılış ile kapanış parametresinin arasına <b>img</b> etiketini koyarız </p>
+    <h5>örnek</h5>  
+    <a href="https://tr.wikipedia.org/wiki/Barış_Manço">
+        <img src="fotoğraflar/BARIŞ MANÇO.jpg" alt="BARIŞ MANÇO" width="300px" title="BARIŞ MANÇO">
+    </a>
+    <!-- burada resime erişmek için önce resim klasörü belirtip / koyup sonra resim dosyasının adını yazıyoruz -->
+
+    <!-- 11. HTML FAVICON VE PAGE TITLE -->
+    <h1>SIRADAKİ KONU: SAYFA BAŞLIĞI VE FAVİCON (TITLE & FAVICON)</h1>
+    <p>Tarayıcı sekmesinde görünen başlık ve logonun ayarlandığı bölümdür.</p>
+    <h3>BİLİNMESİ GEREKEN TERİMLER:</h3>
+    <ul>
+        <li><b>title:</b> Tarayıcı sekmesinde ve arama motoru sonuçlarında görünen sayfa adıdır. <code>&lt;head&gt;</code> içinde yazılır.</li>
+        <li><b>favicon:</b> Tarayıcı sekmesinde sayfa başlığının solunda görünen küçük ikon/logodur.</li>
+        <li><b>link (rel="icon"):</b> Sekme logosunu sayfaya bağlamak için <code>&lt;head&gt;</code> alanına eklenen etikettir.</li>
+    </ul>
+    <h3>ÖRNEK (Head İçinde Kullanımı):</h3>
+    <!-- 
+    <head>
+        <title>Web Tasarımı Ders Notları</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    -->
+    <p>Favicon eklemek için görseller klasörünüzdeki `.ico` veya `.png` uzantılı ikonu <code>&lt;link rel="icon" href="logo.png"&gt;</code> kodu ile <code>&lt;head&gt;</code> etiketinin içine eklersiniz.</p>
+
+    <!-- 12. HTML TABLES -->
+    <h1>SIRADAKİ KONU: TABLOLAR</h1>
+    <h3>Göreceğimiz parametreler :</h3>
+    <ul>
+        <li><b>table :</b> tablo oluşturur</li>
+        <li><b>tr :</b> tablo satırı oluşturur</li>
+        <li><b>td :</b> tablo hücresi oluşturur</li>
+        <li><b>th :</b> tablo başlık hücresi oluşturur</li>
+        <li><b>align :</b> tablo hücresi hizalar</li>
+        <li><b>bgcolor :</b> tablo satırı arka plan rengi belirler</li>
+        <p><b>bgcolor :</b> <b>tr</b> etiketine kullanıldığında tablo satırının <b>arka plan</b> rengini belirler.
+            <code>table</code> etiketine kullanıldığında tablonun <b>kenarlarının rengini</b> belirler.
+        </p>
+        <p><b>border</b> parametresiyle tablo kenarlarının kalınlığı belirlenir</p>
+    </ul>
+    <h3>Örnek:</h3>
+    <table bgcolor="black" border="2">
+        <tr bgcolor="grey"> 
+            <th>pazartesi</th>
+            <th>salı</th>
+            <th>çarşamba</th>
+            <th>perşembe</th>
+            <th>cuma</th>
+            <th>cumartesi</th>
+            <th>pazar</th>
+        </tr>
+        <tr align="center" bgcolor="lightgrey">
+            <td>veri tabanı</td>
+            <td>web tasarımı</td>
+            <td>grafik animasyon</td>
+            <td>programlama</td>
+            <td>yok</td>
+            <td>tatil</td>
+            <td>tatil</td>
+        </tr>
+    </table>
+    <h2> tablo genişliğini ayarlama için "width" parametresini kullanırız:</h2>
+    <table bgcolor="black" width="560">
+        <tr bgcolor="grey"> 
+            <th width="80">pazartesi</th>
+            <th width="80">salı</th>
+            <th width="80">çarşamba</th>
+            <th width="80">perşembe</th>
+            <th width="80">cuma</th>
+            <th width="80">cumartesi</th>
+            <th width="80">pazar</th>
+        </tr>
+        <tr align="center" bgcolor="lightgrey">
+            <td>veri tabanı</td>
+            <td>web tasarımı</td>
+            <td>grafik animasyon</td>
+            <td>programlama</td>
+            <td>yok</td>
+            <td>tatil</td>
+            <td>tatil</td>
+        </tr>
+    </table>
+    <p><b>width</b> parametresini kullanırken değerleri piksel cinsinden belirtiriz ve table etiketine uygularken her bir satıra yazdığımız değerlerin toplamını yazarız.
+        Örneğin table etiketine width = "560" yazdık ve her bir satırın genişliğini 80 piksel olarak belirledik ve 80*7=560 piksel oldu.
+    </p>
+    <ul>
+        <li><b>colspan :</b> tablo hücresini yatay olarak birleştirir</li>
+        <li><b>rowspan :</b> tablo hücresini dikey olarak birleştirir</li>
+    </ul>
+    <table border="1" bgcolor="black">
+        <tr bgcolor="grey">
+            <th colspan="3">kişisel bilgiler</th>
+            <td>kariyeri</td>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>ad</td>
+            <td>soyad</td>
+            <td>yaş</td>
+            <td rowspan="3">futbolcu</td>
+        </tr>    
+        <tr bgcolor="lightgrey">
+            <td>arda</td>
+            <td>turan</td>
+            <td>39</td>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>arda</td>
+            <td>güler</td>
+            <td>19</td>
+        </tr>
+    </table> 
+
+    <!-- 13. HTML LISTS -->
+    <h1>SIRADAKİ KONU: LİSTELER</h1>
+    <p>Listede istediğimiz elemanları kodlamada <code>li</code> etiketi içine yazarız</p>
+    <h2>Göreceğimiz parametreler :</h2>
+    <h3>1. Sırasız Liste (ul)</h3>
+    <p>Başında sayı veya harf olmayan listelerdir. Ul etiketi içine yazarız</p>
+    <p>Örnek:</p>
+    <ul>
+        <li>domates</li>
+        <li>muz</li>
+        <li>elma</li>
+        <li>armut</li>
+    </ul>
+    <h3>2. Sıralı Liste (ol)</h3>
+    <p>Başında sayı veya harf olan listelerdir. Ol etiketi içine yazarız. Harfmi yoksa sayımı olacağına karar vermek için <code>type="a"</code> veya <code>type="1"</code> yazılır</p>
+    <p>Örnek:</p>
+    <ol type="1">
+        <li>tavayı hazırla</li>
+        <li>tavaya yağ dök ve ocağa koy</li>
+        <li>tavaya yumurtayı kır</li>
+        <li>yumurtayı pişene kadar karıştır</li>
+    </ol>
+    <ol type="a">
+        <li>tavayı hazırla</li>
+        <li>tavaya yağ dök ve ocağa koy</li>
+        <li>tavaya yumurtayı kır</li>
+        <li>yumurtayı pişene kadar karıştır</li>
+    </ol>
+    <h3>3. Açıklama Listesi (dl)</h3>
+    <p>Açıklama listeleri, terimler ve tanımlar için kullanılır. <b>Dl</b> etiketi içine yazarız.
+        Dl etiketi içine de 2 ayrı terim yazılır bunlar <b>dt</b> ve <b>dd</b> dir. dt açıklamak istediğimiz terimi dd ye de açıklamasını yazarız</p>
+    <p>Örnek:</p>
+    <dl>
+        <dt>Açıklanacak terim</dt>
+        <dd>Açıklaması</dd><br>
+        <dt>Epistemoloji</dt>
+        <dd>İnsanın bilgiyi nasıl elde ettiğini,neyin bilgi sayıldığını ve bir şeyin doğru
+            olduğunu nasıl kanıtlayaabileceğimizi inceleyen felsefe dalıdır.
+        </dd>
+    </dl><br>
+
+</body>
+</html>
